@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing Functions</title>
+    <script type="text/javascript" src="practice.js"></script>
+</head>
+<body>
+    <h1>Enter your age to find if you are old enough to vote</h1>
+
+    <form>
+        <label for ="fname">First Name: </label> <br>
+        <input type ="text" id="fname" name="fname"> <br>
+        <label for ="lname">Last Name: </label> <br>
+        <input type ="text" id="lname" name="lname"> <br>
+        <label for="age">Age: </label> <br>
+        <input type ="number" id="age" name="age"> <br> <br>
+    </form>
+
+    <button onclick="ageVote(document.getElementById('age').value)">Find if you are old enough to vote or not</button> <br>
+
+    <p id="result"></p>
+
+    <h1>Find the area of a center</h1>
+
+    <form>
+        <label for ="radius">Enter the radius of the circle: </label> <br>
+        <input type ="number" id="radius" name="radius"> <br> <br>
+    </form>
+
+    <button onclick="areaCircle(document.getElementById('radius').value)">Find what the area of the circle is</button> <br>
+
+    <p id="answer"></p>
+
+    <h1>Find the greatest of two numbers</h1>
+
+    <form>
+        <label for="num">Number 1: </label> <br>
+        <input type ="number" id="a" name="num"> <br> 
+        <label for="num">Number 2: </label> <br>
+        <input type ="number" id="b" name="num"> <br> <br>
+    </form>
+
+    <button onclick="greater(document.getElementById('a').value, document.getElementById('b').value)">Find which number is larger</button> <br>
+
+    <p id="product"></p>
+
+    <h1>Find if a number is even or odd</h1>
+
+    <form>
+        <label for="num">Number: </label> <br>
+        <input type ="number" id="num" name="num"> <br> <br>
+        
+    </form>
+
+    <button onclick="evenOdd(document.getElementById('num').value)">Find if the number is even or odd</button> <br>
+
+    <p id="Product"></p>
+
+    <h1>Find if a string is a palindrome</h1>
+
+    <form>
+        <label for="str">String: </label> <br>
+        <input type ="text" id="str" name="str"> <br> <br>
+        
+    </form>
+
+    <button onclick="palindrome(document.getElementById('str').value)">Find if the string is a palindrome</button> <br>
+
+    <p id="Answer"></p>
+</body>
+</html>

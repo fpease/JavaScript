@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and DOM Practice</title>
+</head>
+<body>
+    <h2>Names of Flowers</h2>
+    <p id="fl"></p>
+    <script>
+        const flowers=["Rose"," Lily"," Tulip"," Sunflower"," Lotus"];
+        for(let i=0; i<flowers.length; i++)
+        {
+            document.getElementsById("fl").innerHTML=flowers[i];
+        }
+    </script>
+
+    <h2>Change Six Headings</h2>
+
+    <p>Original Values</p>
+    <h1>West-mec Coding</h1>
+    <h2>West-mec Coding</h2>
+    <h3>West-mec Coding</h3>
+    <h4>West-mec Coding</h4>
+    <h5>West-mec Coding</h5>
+    <h6>West-mec Coding</h6>
+
+    <p>Changed Values</p>
+    <h1 id="h1">West-mec Coding</h1>
+    <h2 id="h2">West-mec Coding</h2>
+    <h3 id="h3">West-mec Coding</h3>
+    <h4 id="h4">West-mec Coding</h4>
+    <h5 id="h5">West-mec Coding</h5>
+    <h6 id="h6">West-mec Coding</h6>
+    <script>
+        const newheadings=["Introduction to Web Development","HTML5","CSS","JavaScript","Projects","Quizzez"];
+        document.getElementById("h1").innerHTML=newheadings[0];
+        document.getElementById("h2").innerHTML=newheadings[1];
+        document.getElementById("h3").innerHTML=newheadings[2];
+        document.getElementById("h4").innerHTML=newheadings[3];
+        document.getElementById("h5").innerHTML=newheadings[4];
+        document.getElementById("h6").innerHTML=newheadings[5];
+    </script>
+
+
+</body>
+</html>

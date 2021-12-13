@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search and Replace</title>
+</head>
+<body>
+    <script>
+        let text1="My weekend was full of surprises. I hope that next weekend there are no surprises."
+        var sr1= prompt("Enter a word to search");
+        var result= text1.search(sr1);
+        document.write("Word searched: " + sr1 + "<br/>");
+        document.write("Position of word searched: " + result + "<br/>");
+        var word1=window.prompt("Enter a word to replace");
+        var newtext1= text1.replaceAll(sr1, word1);
+        document.write(newtext1);
+
+    </script>
+</body>
+</html>
